@@ -28,19 +28,23 @@ df_alleghany = df_elections.loc["Alleghany County", ["Year", "Republican Share"]
 df_accomack.plot(x = "Year", y = "Republican Share")
 plt.ylabel("Accomack County")
 plt.xticks(range(1924,2020,4),rotation = 90)
+plt.title("Republican Share of Accomack county")
 plt.savefig("accomack_county.pdf")
 
 df_albemarle.plot(x = "Year", y = "Republican Share")
 plt.ylabel("Albemarle County")
 plt.xticks(range(1924,2020,4),rotation = 90)
+plt.title("Republican Share of Albemarle County")
 plt.savefig("albemarle_county.pdf")
 
 df_alexandria.plot(x = "Year", y = "Republican Share")
 plt.ylabel("Alexandria City")
 plt.xticks(range(1924,2020,4),rotation = 90)
+plt.title("Republican Share of Alexandria City")
 plt.savefig("alexandria_city.pdf")
 
 df_alleghany.plot(x = "Year", y = "Republican Share")
 plt.ylabel("Alleghany County")
 plt.xticks(range(1924,2020,4),rotation = 90)
+plt.title("Republican Share of Alleghany County")
 plt.savefig("alleghany_county.pdf")
