@@ -26,7 +26,8 @@ for i in city:
     df_city["Year"] = df_city.index
     df_city.plot(x = "Year", y = "Republican Share")
     plt.ylabel("Republican Vote Share")
-    plt.yticks(np.arange(0.0, 1.0, 0.2))
+    plt.xlabel("Year")
+    plt.yticks(np.arange(0.0, 1.2, 0.1))
     plt.xticks(range(1924, 2020, 4),rotation = 90)
     plt.grid(True)
     plt.title("Republican Vote Share of " + i)
