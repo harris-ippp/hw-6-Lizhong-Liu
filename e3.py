@@ -15,10 +15,10 @@ for i in range(1924,2020,4):
     df["Year"] = i
     df_election.append(df.loc[:, ["Democratic", "Republican", "Total Votes Cast", "Year"]])
 
-# Concat the list to a dataframe and adding the Republican Share column.
+# Concat the list to a dataframe.
 df_elections = pd.concat(df_election)
 
-# Plot and save the figures as PDF.
+# Calculating the Republican vote share for the four counties/cities; plot and save the figures as PDF.
 city = ["Accomack County", "Albemarle County", "Alexandria City", "Alleghany County"]
 for i in city:
     df_city = df_elections.loc[df_elections.index.str.contains(i), : ].groupby("Year").sum()
